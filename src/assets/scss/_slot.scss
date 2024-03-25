@@ -95,7 +95,13 @@
 
 .reel {
   width: 100%;
-
+  &::before {
+    content: 'Add name list, then start the draw';
+    height: $reel-item-height;
+    line-height: $reel-item-height;
+    font-size: 3rem;
+    color: rgba($color-black, 0.5);
+  }
   > div {
     height: $reel-item-height;
     font-size: 3.75rem;
